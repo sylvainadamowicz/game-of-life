@@ -14,14 +14,14 @@ function game_of_life( nx, ny, nstep )
 %   Output parameters
 %   None
 
-%   Define some constants
+%   Defining some constants
 % The time between images in seconds
 delay = 0.5;
 % Displacements from one cell to its 8 neighbouring cells
 dx = [-1,  0,  1, -1,  1, -1,  0,  1];
 dy = [ 1,  1,  1,  0,  0, -1, -1, -1];
 
-%   Initialise the grid
+%   Initialising the grid
 world = zeros(nx+2, ny+2); % Extra sites around the edge fixed to zero
 imagesc(world);
 pause(delay);
